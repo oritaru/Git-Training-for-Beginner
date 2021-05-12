@@ -30,7 +30,7 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'app-CloudWorkshop'
+        app-name: 'mcw2021may-teamc-00'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_F21ED441075A49FDBCD849B162F676B9 }}
         package: ${{env.DOTNET_ROOT}}/myapp
